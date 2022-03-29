@@ -10,14 +10,15 @@ function App() {
   return (
     <Router>
       <nav>
-        <Link to={'/'}>Home</Link>
-        <Link to={'/about'}>About</Link>
-        <Link to={'/profile'}>Profile</Link>
+        <Link to={'/'}>   Home   </Link>
+        <Link to={'/about'}>   About   </Link>
+        <Link to={'/profile'}>   Profile   </Link>
       </nav>
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />
         <Route path='/profile/:USERNAME' element={<Profile/>} />
+        <Route path='/profile/' element={<Profile/>} />
         <Route path='/*' element={<ErrorPage/>} />
       </Routes>
       <div> FOOOter </div>
